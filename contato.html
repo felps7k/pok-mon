@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<HTML lang="pt-br">
+<head>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/menu.js"></script>
+    <meta charset="UTF-8">
+    <title>Felipe Farias</title>
+    <a name="top">
+        <a href="/idw"></a>
+    </a>
+</head>
+<body>
+    <section id="screen-one">
+        <header id="top">
+            <nav>
+                <div id="sse1">
+                    <div id="sses1">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="iniciais.html">Iniciais</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="pedras.html">Pedras</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <div class="div-corpo">
+        <a name="contato">
+            <h1>Contato</h1>
+        </a>
+        <p class="contact">Desenvolvedor: 
+        <a class="link" href="https://felipefarias.com.br/" target="_blank">Felipe Farias</a></p>
+        <p class="contact">E-mail: 
+        <a class="link" href="mailto:contato@felipefarias.com.br">contato@felipefarias.com.br</a></p>
+        <p class="contact">Fonte: 
+        <a class="link" href="https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9P%C3%A9dia" target="_blank">Pokémon Fandom</a></p>
+        <p class="contact">Fonte Pokémon Download: 
+        <a class="link" href="fonts/PokemonHollow.ttf" target="_blank">Pokémon Hollow</a></p>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Voltar ao topo">Voltar ao topo</button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<HTML lang="pt-br">
+<head>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/menu.js"></script>
+    <meta charset="UTF-8">
+    <title>Felipe Farias</title>
+    <a name="top">
+        <a href="/idw"></a>
+    </a>
+</head>
+<body>
+    <section id="screen-one">
+        <header id="top">
+            <nav>
+                <div id="sse1">
+                    <div id="sses1">
+                    <ul>
+                        <li><a href="#index">Início</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="iniciais.html">Iniciais</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="pedras.html">Pedras</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <div class="div-corpo">
+        <a name="index">
+            <h1>Pokémon</h1>
+        </a>
+        <p>Este portal foi desenvolvido para a cadeira de Introdução ao Desenvolvimento Web do curso de Ciência da Computação da Universidade ULBRA - Gravataí.</p>
+        <p>Vamos falar por aqui um pouco sobre Pokémon, baseado na sua história, seus Pokémons iniciais, galeria de fotos e pedras evolutivas, todos baseados na sua Primeira Temporada pois foi a que mais assisti e melhor conheço.</p>
+        <p>Teremos também um formulário de contato direto comigo Felipe Farias, ao entrar em contato pelo mesmo eu receberei um e-mail em minha caixa postal.</p>
+        <p>Então clica aí nos menus e vamos conhecer juntos um pouco do mundo Pokémon!!</p>
+        <img class="logo" src="img/logo.png" alt="Pokemon Logo"></img>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Voltar ao topo">Voltar ao topo</button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    </body>
+</html>

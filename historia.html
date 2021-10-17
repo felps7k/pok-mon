@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<HTML lang="pt-br">
+<head>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/menu.js"></script>
+    <meta charset="UTF-8">
+    <title>Felipe Farias</title>
+    <a name="top">
+        <a href="/idw"></a>
+    </a>
+</head>
+<body>
+    <section id="screen-one">
+        <header id="top">
+            <nav>
+                <div id="sse1">
+                    <div id="sses1">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#historia">História</a></li>
+                        <li><a href="iniciais.html">Iniciais</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="pedras.html">Pedras</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <div class="div-corpo">
+        <a name="historia">
+            <h1>História</h1>
+        </a>
+        <p>Pokémon <i>(ポケモン Pokemon)</i> é uma franquia de mídia que pertence a <b>The Pokémon Company</b>, tendo sido criada por <i>Satoshi Tajiri</i> em 1995. Ela é centrada em criaturas ficcionais chamadas <i>"Pokémon"</i>, que os seres humanos capturam e os treinam para lutarem um contra o outro como um esporte.</p>
+        <p>A franquia começou com um par de jogos lançados para o <i>Game Boy original</i>, desenvolvidos pela <i>Game Freak</i> e publicados pela <b>Nintendo</b>. Atualmente, a franquia se estende em jogos, cartas colecionáveis, série de televisão, além de filmes, mangás e brinquedos. Pokémon é a segunda franquia de mídia de jogos mais bem sucedida e lucrativa do mundo, atrás da franquia de Mario que também pertence a Nintendo.</p>
+        <p>Em 2006, a franquia celebrou seu aniversário de 10 anos. As vendas dos jogos (incluindo home console games, como <i>Hey You, Pikachu!</i>, para Nintendo 64) acumularam mais de 200 milhões de cópias vendidas. Em novembro de 2005, a <i>4Kids Entertainment</i>, que tinha conseguido o licenciamento da série animada, anunciou que havia concordado em não renovar o contrato da representação da franquia.</p>
+        <p>A <b>Pokémon USA Inc.</b> (atualmente <i>The Pokémon Company International</i>), uma subsidiária da japonesa <i>Pokémon Co.</i>, passou a supervisionar todas as licenças de Pokémon fora da Ásia. Até 2013, a franquia de Pokémon acumulou ¥4 trilhões ao redor do mundo (equivalente a <b>US$ 40,98 bilhões</b>).</p>
+        <br>
+        <center><img class="histimg" src="img/timeline.png" height="100px" alt="Pokémon Timeline"></img></center>
+        <p class="text-cent">
+            Fonte: <a href="https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9P%C3%A9dia" target="_blank">Pokémon Fandom</a>
+        </p>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Voltar ao topo">Voltar ao topo</button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+</html>
